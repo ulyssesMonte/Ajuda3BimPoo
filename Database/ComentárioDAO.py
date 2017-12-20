@@ -14,7 +14,7 @@ class ComentarioDAO():
        pass
 
     def insert(self, comentario):
-      cursor=conn.cursor
+      cursor=conn.cursor()
         cursor.execute = ("""INSERT INTO tb_comentario(id_usuario,id_publicacao, mensagem, data_hora, curtidas)
                 VALUES(%s, %s, %s, %s, %s)"""),(comentario.idPublicacao, comentario.idRemetente, comentario.mensagem.id, comentario.dataHora, comentario.curtidas)
     conn.close

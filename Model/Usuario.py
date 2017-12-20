@@ -3,7 +3,7 @@ class Usuario():
         self.nome = nome
         self.email = email
         self.senha = senha
-        self.data_nasc = dataNasc
+        self.dataNasc = dataNasc
         self.profissao = profissao
         self.genero = genero
         self.cidade = cidade

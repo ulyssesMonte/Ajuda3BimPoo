@@ -47,6 +47,11 @@ def Comentar():
         Novocomentario.dataHora = datetime.datetime().now()
         ComentarioDAO.inserir(Novocomentario)
 
+def imprimirComentarios():
+    cursor=conn.cursor()
+    cursor.execute("""SELECT texto, data_hora FROM tb_comentario""")
+    print(cursor)
+        
 while True
     menu=input("o que deseja fazer agora?\n0-sair\n1-criar o banco de dados\n2-cadastrar um usuário\n3-realizar LogIn")
     criarTabelas()
